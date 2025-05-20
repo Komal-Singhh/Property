@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="icon active" data-section="profile">
+                <img src="img/1.png" alt="Profile">
+                <span>My Profile</span>
+            </div>
+            <hr>
+            <div class="icon" data-section="wishlist">
+                <img src="img/2.png" alt="Wishlist">
+                <span>Wishlist</span>
+            </div>
+            <hr>
+            <div class="icon" data-section="property">
+                <img src="img/3.png" alt="Property">
+                <span>Assigned Property</span>
+            </div>
+            <hr>
+            <div class="icon" data-section="bills">
+                <img src="img/4.png" alt="Bills">
+                <span>Bills & Payment</span>
+            </div>
+            <hr>
+            <div class="icon" data-section="support">
+                <img src="img/1.png" alt="Support">
+                <span>Support Request</span>
+            </div>
+            <hr>
+            <div class="icon" data-section="feedback">
+                <img src="img/1.png" alt="Feedback">
+                <span>Feedback</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Profile Section -->
+            <div id="profile" class="content-section active">
+                
+                <div class="heading-container">
+                    <h2 class="heading">Personal Details</h2>
+                    <div class="circle">R</div>
+                </div>
+                
+                <p>Update your info and find out how it’s used.</p>
+
+                <!-- Personal Details -->
+                <div class="section personal-details">
+                    <div class="form-group">
+                        <div class="field">
+                            <label>Name</label>
+                            <input type="text" class="box">
+                        </div>
+                        <div class="field">
+                            <label>Number</label>
+                            <input type="tel" class="box">
+                        </div>
+                        <div class="field">
+                            <label>Email</label>
+                            <input type="email" class="box">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="field">
+                            <label>Gender</label>
+                            <div class="box">
+                            <select>
+                            <option value="" disabled selected>Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            </select></div>
+                        </div>
+                        <div class="field">
+                            <label>DOB</label>
+                            <input type="date" class="box">
+                        </div>
+                        <div class="field">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Primary Details -->
+                <div class="section primary-details">
+                    <h3>Primary Details</h3>
+                    <div class="form-group">
+                        <div class="field">
+                            <label>
+                                <div class="verified-wrapper">
+                                    
+                                    Email
+                                    <span class="verified"></span>
+                                </div>
+                            </label>
+                            <input type="email" class="box">
+                        </div>
+                        <div class="field">
+                            <label>
+                                <div class="verified-wrapper">
+                                    
+                                    Contact Number
+                                    <span class="verified"></span>
+                                </div>
+                            </label>
+                            <input type="tel" class="box">
+                        </div>
+                        <div class="field">
+                            <label>
+                                <div class="verified-wrapper">
+                                    
+                                    Whatsapp Number
+                                    <span class="verified"></span>
+
+                                </div>
+                            </label>
+                            <input type="tel" class="box">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Permanent Address -->
+                <div class="section address-details">
+                    <h3>Permanent Address</h3>
+                    <div class="form-group">
+                        <div class="field">
+                            <label>Pincode</label>
+                            <input type="text" class="box">
+                        </div>
+                        <div class="field">
+                            <label>City</label>
+                            <input type="text" class="box">
+                        </div>
+                        <div class="field">
+                            <label>State</label>
+                            <input type="text" class="box">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="field">
+                                <label>Country</label>
+                                <input type="text" class="box">
+                            </div>
+                            <div class="field street-address">
+                                <label>Street Address</label>
+                                <textarea class="box1"></textarea>
+                            </div>
+                            <div class="field empty">
+                                
+                            </div>
+                        </div>
+                                    </div>
+
+                <!-- Flatmate Details -->
+                <div class="section">
+                    <div class="header">
+                        <h3>Flatmate Details</h3>
+                        <button class="add-btn">+ Add</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Contact No</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Relationship</th>
+                                <th>Adhar/Pan Number</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Anu</td>
+                                <td>anu@gmail.com</td>
+                                <td>123456</td>
+                                <td>24</td>
+                                <td>F</td>
+                                <td>Sister</td>
+                                <td>1234568956</td>
+                                <td><span class="action">edit</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- My KYC -->
+                <div class="section kyc-details">
+                    <h3>My KYC</h3>
+                    <div class="form-group">
+                        <div class="field">
+                            <label>
+                                <div class="verified-wrapper">
+                                    
+                                    Adhar Card Number
+                                    <span class="verified"></span>
+                                </div>
+                            </label>
+                            <input type="text" class="box">
+                        </div>
+                        <div class="field">
+                            <label>
+                                <div class="verified-wrapper">
+                                    
+                                    Pan Number
+                                    <span class="verified"></span>
+                                </div>
+                            </label>
+                            <input type="text" class="box">
+                        </div>
+                        <div class="field">
+                            <label>
+                                <div class="verified-wrapper">
+                                    
+                                    Driving License
+                                    <span class="verified"></span>
+                                </div>
+                            </label>
+                            <input type="text" class="box">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Witness -->
+                <div class="section">
+                    <div class="header">
+                        <h3>My Witness</h3>
+                        <button class="add-btn">+ Add</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Contact No</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Anu</td>
+                                <td>anu@gmail.com</td>
+                                <td>123456</td>
+                                <td><span class="verified"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Wishlist Section -->
+            <div id="wishlist" class="content-section">
+            <div class="main-content">
+            <h2>Wishlist</h2>
+            <div class="property-grid">
+                <!-- Property Card 1 (Single Image) -->
+                <div class="property-card">
+                    <img src="img/w1.jpg" alt="Property 1" class="property-image1">
+                    <div class="property-details1">
+                        <h3>Affordable 1BHK Fully Furnished Flat for rent near Electronic City Phase 1</h3>
+                        <p>Iris Recidency, Electronic City</p>
+                        <div class="price">24000/M*</div>
+                        <div class="property-info1">
+                            <span><img src="img/i1.png" alt="support" style="width: 20px; height: 20px;">1 Beds</span>
+                            <span><img src="img/i2.png" alt="support" style="width: 20px; height: 20px;">2 Baths</span>
+                            <span><img src="img/i3.png" alt="support" style="width: 20px; height: 20px;">650 Sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span><strong>Listed on:</strong> 9 Sept 2024</span>
+
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 (Slider) -->
+                <div class="property-card">
+                    <div class="slider-container">
+                        <div class="slider" id="slider2">
+                            <div class="slide"><img src="img/w2.jpg" alt="Property 2 - Image 1"></div>
+                            <div class="slide"><img src="img/w4.jpg" alt="Property 2 - Image 2"></div>
+                            <div class="slide"><img src="img/w5.jpg" alt="Property 2 - Image 3"></div>
+                        </div>
+                        <div class="dots" id="dots2">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="property-details1">
+                        <h3>No Brokerage Fully Furnished Studio Flat for rent near JP Nagar Dollar Layout</h3>
+                        <p>HanviLuck Tower, JP Nagar</p>
+                        <div class="price">18000/M*</div>
+                        <div class="property-info1">
+                            <span><img src="img/i1.png" alt="support" style="width: 20px; height: 20px;">1 Beds</span>
+                            <span><img src="img/i2.png" alt="support" style="width: 20px; height: 20px;">2 Baths</span>
+                            <span><img src="img/i3.png" alt="support" style="width: 20px; height: 20px;">650 Sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span><strong>Listed on:</strong> 9 Sept 2024</span>
+
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 (Slider) -->
+                <div class="property-card">
+                    <div class="slider-container">
+                        <div class="slider" id="slider3">
+                            <div class="slide"><img src="img/w3.jpg" alt="Property 3 - Image 1"></div>
+                            <div class="slide"><img src="img/w6.jpg" alt="Property 3 - Image 2"></div>
+                            <div class="slide"><img src="img/w7.jpg" alt="Property 3 - Image 3"></div>
+                        </div>
+                        <div class="dots" id="dots3">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="property-details1">
+                        <h3>No Brokerage 2BHK Fully Furnished Flat for rent near Thubarahalli Marathahalli</h3>
+                        <p>SLV Residency, Munnekollal</p>
+                        <div class="price">32000/M*</div>
+                        <div class="property-info1">
+                            <span><img src="img/i1.png" alt="support" style="width: 20px; height: 20px;">1 Beds</span>
+                            <span><img src="img/i2.png" alt="support" style="width: 20px; height: 20px;">2 Baths</span>
+                            <span><img src="img/i3.png" alt="support" style="width: 20px; height: 20px;">650 Sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span><strong>Listed on:</strong> 9 Sept 2024</span>
+
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+
+            <!-- Assigned Property Section -->
+            <div id="property" class="content-section">
+                
+            <div class="property-header">
+                <h2>Assigned Property</h2>
+                <button class="agreement-btn">Agreement</button>
+            </div>
+            <div class="property-details">
+                <div class="property-image">
+                    <img src="img/d1.jpg" alt="Property Image">
+                </div>
+                <div class="property-info">
+                    <h3>No Brokerage 2BHK Furnished Flat for rent in Kattigenahalli Yelahanka</h3>
+                    <h3>Flat No: 504</h3>
+                    <div class="dates-row">
+                        <p><span class="label">Start Date</span> <span class="value">12 Sep 2024</span></p>
+                        <p><span class="label">End Date</span> <span class="value">12 Aug 2025</span></p>
+                    </div>
+                    <div class="amounts-row">
+                        <p><span class="label">Deposit Amount</span> <span class="value">50000</span></p>
+                        <p><span class="label">Rental Amount</span> <span class="value">14500</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="renewal-status">
+                <div class="renewal-status-header">
+                    <h3>Renewal Status</h3>
+                    <button class="add-btn">+ Add</button>
+                </div>
+                <table class="renewal-table">
+                    <thead>
+                        <tr>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Duration</th>
+                            <th>Rental Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12 Sep 2024</td>
+                            <td>12 Aug 2025</td>
+                            <td>11 Months</td>
+                            <td>14500</td>
+                            <td class="status-running">Running</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="view-details-btn">View Property Details & Amenities</button>
+            <div class="assigned-assets">
+                <h3>Assigned Assets</h3>
+                <div class="assets-list">
+                    <div class="asset-item">3 Fan</div>
+                    <div class="asset-item">3 Beds</div>
+                    <div class="asset-item">1 TV</div>
+                    <div class="asset-item">4 Chairs</div>
+                    <div class="asset-item">1 Dining</div>
+                </div>
+            </div>
+        
+            </div>
+
+            <!-- Bills & Payment Section -->
+            <div id="bills" class="content-section">
+                <h2 >Bills & Payments</h2>
+
+            <!-- Bills Section -->
+            <div class="bills">
+                <div class="bill-card">
+                    <h3>Rental</h3>
+                    <p>June 2024 - July 2024 </p>
+                    <p style="font-weight: bold; font-size: 30px; color: #2dac4a;">₹ 30000</p>
+                    <button>Pay Now</button>
+                </div>
+                <div class="bill-card">
+                    <h3>Electricity</h3>
+                    <p>Account Id: XXXXXXX </p>
+                    <p style="font-weight: bold; font-size: 30px; color: #2dac4a;">₹ 2489</p>
+                    <button>Pay Now</button>
+                </div>
+                <div class="bill-card">
+                    <h3>Maintenance</h3>
+                    <p>Unit No: 501 </p>
+                    <p style="font-weight: bold; font-size: 30px; color: #2dac4a;">₹ 500</p>
+                    <button>Pay Now</button>
+                </div>
+                <div class="bill-card">
+                    <h3>Water Tanker</h3>
+                    <p>Unit No: 501 </p>
+                    <p style="font-weight: bold; font-size: 30px; color: #2dac4a;">₹ 500</p>
+                    <button>Pay Now</button>
+                </div>
+            </div>
+
+            <!-- Receipts Section -->
+            <div class="receipts">
+                <h3>Receipts</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Payment Date</th>
+                            <th>Receipt</th>
+                            <th>Remark</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14500</td>
+                            <td>12 Aug 2025</td>
+                            <td>Receipt</td>
+                            <td>14500</td>
+                            <td class="status-paid">Paid</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+
+            <!-- Support Request Section -->
+            <div id="support" class="content-section">
+              <h2>Support</h2>
+        <div class="form-group inline">
+            <label for="support-type">Type of Support</label>
+            <select class="support" id="support-type">
+                <option value="">Select</option>
+                <option value="it">IT</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" placeholder=""></textarea>
+        </div>
+        <div class="form-group">
+            <label for="description">Attachment(If Any)</label>
+            
+        </div>
+        <div class="attachment" id="dropZone">
+            
+           <p><span class="icon">+</span> Add or Drop files here</p>
+
+
+            <div class="file-list" id="fileList"></div>
+            <input type="file" id="fileInput" multiple style="display: none;">
+        </div>
+        <h3>Previous Support Request</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>View Details</th>
+                    <th>Feedback</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12 Aug 2025</td>
+                    <td>IT</td>
+                    <td>Inprogress</td>
+                    <td><button class="view-btn">View</button></td>
+                    <td><img src="img/s1.png" alt="support" style="width: 20px; height: 20px;"></td>
+                </tr>
+                <tr>
+                    <td>19 Aug 2025</td>
+                    <td>Maintenance</td>
+                    <td>Completed</td>
+                    <td><button class="view-btn">View</button></td>
+                    <td><img src="img/s1.png" alt="support" style="width: 20px; height: 20px;">
+</td>
+                </tr>
+            </tbody>
+        </table>
+            </div>
+
+            <!-- Feedback Section -->
+            <div id="feedback" class="content-section">
+             <center>   <div class="feedback-container">
+        <h2>Share Your Feedback</h2>
+        <div class="form-group">
+            <label for="rating">Rate Your Experience</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Your Feedback</label>
+            <textarea id="feedback" placeholder="Tell us about your experience..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit Feedback</button>
+    </div></center>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const icons = document.querySelectorAll('.sidebar .icon');
+        const sections = document.querySelectorAll('.content-section');
+
+        icons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                // Remove active class from all icons and sections
+                icons.forEach(i => i.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+
+                // Add active class to clicked icon and corresponding section
+                icon.classList.add('active');
+                const sectionId = icon.getAttribute('data-section');
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+    </script>
+
+
+
+<script>
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const fileList = document.getElementById('fileList');
+
+        // Trigger file input click when clicking the drop zone
+        dropZone.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        // Handle drag and drop
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.style.backgroundColor = '#e9ecef';
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.style.backgroundColor = '#fff';
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.backgroundColor = '#fff';
+            const files = e.dataTransfer.files;
+            handleFiles(files);
+        });
+
+        // Handle file input change
+        fileInput.addEventListener('change', () => {
+            const files = fileInput.files;
+            handleFiles(files);
+        });
+
+        // Function to handle file display and removal
+        function handleFiles(files) {
+            for (const file of files) {
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                fileItem.innerHTML = `
+                    <span>${file.name}</span>
+                    <button onclick="this.parentElement.remove()">Remove</button>
+                `;
+                fileList.appendChild(fileItem);
+            }
+        }
+    </script>
+
+<script>
+        // Basic form submission handling (for demo purposes)
+        document.querySelector('.submit-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            const rating = document.querySelector('input[name="rating"]:checked');
+            const feedback = document.querySelector('#feedback').value;
+
+            if (!rating || !feedback) {
+                alert('Please provide a rating and feedback.');
+                return;
+            }
+
+            alert('Thank you for your feedback!');
+            document.querySelector('#feedback').value = ''; // Clear the form
+            document.querySelectorAll('input[name="rating"]').forEach(r => r.checked = false);
+        });
+    </script>
+
+<script>
+        // Slider functionality for Card 2 and Card 3
+        function initSlider(sliderId, dotsId) {
+            const slider = document.getElementById(sliderId);
+            const slides = slider.children;
+            const dots = document.getElementById(dotsId).children;
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+
+            // Function to update the slider position and dots
+            function updateSlider(index) {
+                slider.style.transform = `translateX(-${index * 100}%)`;
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].classList.remove('active');
+                }
+                dots[index].classList.add('active');
+                currentIndex = index;
+            }
+
+            // Automatic sliding every 3 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlider(currentIndex);
+            }, 3000);
+
+            // Manual dot navigation
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].addEventListener('click', () => {
+                    updateSlider(i);
+                });
+            }
+        }
+
+        // Initialize sliders for Card 2 and Card 3
+        initSlider('slider2', 'dots2');
+        initSlider('slider3', 'dots3');
+    </script>
+    
+</body>
+</html>
